@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Products } from "./components/products";
 import { Cart } from "./components/cart";
+import { Cart2 } from "./components/cart2";
 import { useShoppingCart, DebugCart } from "use-shopping-cart";
 
 const productData = [
@@ -32,12 +33,12 @@ const productData = [
     currency: "EUR",
   },
   {
-    name: "Baby Bananas",
+    name: "Mini Bananas",
     //price_id: "price_1MDu1RHxQ9v68qpGAyB0AqfW", // LIVE mode, see stripe dashboard
     price_id: "price_1MEC6HHxQ9v68qpGWX3u48GP", // TEST mode, see stripe dashboard
     description: "The banana is rich in fibre, potassium and some beneficial vitamins for health. It is a good fruit for everybody except for diabetic and obese people, due to its high starch and sugar contents.",
     price: 299,
-    image: "http://127.0.0.1:5173/bananas.jpg",
+    image: "http://127.0.0.1:5173/mini-bananas.jpg",
     currency: "EUR",
   },
 ];
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="grid grid-cols-3 gab-2">
+      <div className="grid grid-cols-1 md:grid-cols-3 gab-2">
 
         <div className="col-span-2">
           <div className="flex justify-center text-3xl m-4">Products List</div>
@@ -61,7 +62,7 @@ function App() {
         <div className="grid grid-cols-1 gap-6 content-start">
           <div className="flex justify-center text-3xl m-4">Shopping Cart</div>
           {/* Renders the shopping cart */}
-          <Cart/>
+          <Cart2/>
         </div>
 
       </div>

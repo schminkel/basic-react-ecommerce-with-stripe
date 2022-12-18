@@ -26,27 +26,30 @@ export function Cart(props) {
       <p className="flex justify-center" >
         Total: {formattedTotalPrice}
       </p>
+
+
+      {/* Clears the cart */}
+      <div className="flex justify-center">
+        <button
+          type="button"
+          className="rounded-md border border-transparent bg-red-400 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-red-500"
+          onClick={() => clearCart()}>
+          Clear Cart
+        </button>
+      </div>
+
+
+      {/* Redirects the user to Stripe */} 
       <div className="flex justify-center py-2">
-        {/* Redirects the user to Stripe */}
         <button
           type="button"
           className="rounded-md border border-transparent bg-green-400 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-green-500"
-          onClick={() => redirectToCheckout()}
-        >
+          onClick={() => redirectToCheckout()}>
           Checkout
         </button>
       </div>
 
-      <div className="flex justify-center">
-        {/* Clears the cart */}
-        <button
-          type="button"
-          className="rounded-md border border-transparent bg-red-400 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-red-500"
-          onClick={() => clearCart()}
-        >
-          Clear Cart
-        </button>
-      </div>
+      
       
 
       {/* {console.log("cartDetails: ", cartDetails)} */}

@@ -22,7 +22,7 @@ export function Products(props) {
     <>
       <div className="flex justify-center">
         <div className="bg-white">
-          <div className="mx-auto max-w-2xl py-4 px-4 lg:max-w-7xl lg:py-4 lg:px-8">
+          <div className="mx-auto max-w-2xl py-4 px-4 md:max-w-7xl md:py-4 md:px-8">
             <div className="mt-2 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
               {props.product.map((product) => (
                 <div key={product.name}>

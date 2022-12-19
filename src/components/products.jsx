@@ -29,8 +29,8 @@ export function Products(props) {
                   <div className="relative">
                     <div className="relative h-52 w-full overflow-hidden rounded-lg border-solid border-slate-100 border">
                       <img
-                        src={product.image}
-                        alt={product.image} 
+                        src={product.imageSrc}
+                        alt={product.imageAlt} 
                         className="h-full w-full object-cover object-center"
                       />
                     </div>

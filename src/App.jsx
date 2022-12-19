@@ -11,7 +11,8 @@ const productData = [
     price_id: "price_1MEC6HHxQ9v68qpGWX3u48GP", // TEST mode, see stripe dashboard
     description: "The banana is rich in fibre, potassium and some beneficial vitamins for health. It is a good fruit for everybody except for diabetic, due to its high starch and sugar contents.",
     price: 399,
-    image: "http://127.0.0.1:5173/bananas.jpg",
+    imageSrc: "http://127.0.0.1:5173/bananas.jpg",
+    imageAlt: "Image of bananas.",
     currency: "EUR",
   },
   {
@@ -20,7 +21,8 @@ const productData = [
     price_id: "price_1MECASHxQ9v68qpGhO3uWriR", // TEST mode, see stripe dashboard
     description: "The apple is a fruit that is rich in fibre, vitamins and minerals. It is a good fruit for everybody except for diabetic and obese people, due to its high starch and sugar contents.",
     price: 499,
-    image: "http://127.0.0.1:5173/apples.jpg",
+    imageSrc: "http://127.0.0.1:5173/apples.jpg",
+    imageAlt: "Image of apples.",
     currency: "EUR",
   },
   {
@@ -29,16 +31,18 @@ const productData = [
     price_id: "price_1MECBeHxQ9v68qpGXTI1ZOd5", // TEST mode, see stripe dashboard
     description: "The term orange may refer to a number of citrus trees that produces fruit for people to eat. Oranges are a very good source of Vitamin C. Orange juice is an important part of many people's breakfast.",
     price: 599,
-    image: "http://127.0.0.1:5173/oranges.jpg",
+    imageSrc: "http://127.0.0.1:5173/oranges.jpg",
+    imageAlt: "Image of oranges.",
     currency: "EUR",
   },
   {
     name: "Mini Bananas",
-    //price_id: "price_1MDu1RHxQ9v68qpGAyB0AqfW", // LIVE mode, see stripe dashboard
-    price_id: "price_1MEC6HHxQ9v68qpGWX3u48GP", // TEST mode, see stripe dashboard
+    //price_id: "price_1MGQtiHxQ9v68qpGz18vp3u9", // LIVE mode, see stripe dashboard
+    price_id: "price_1MGTuWHxQ9v68qpGF6QHH2A3", // TEST mode, see stripe dashboard
     description: "The banana is rich in fibre, potassium and some beneficial vitamins for health. It is a good fruit for everybody except for diabetic and obese people, due to its high starch and sugar contents.",
     price: 299,
-    image: "http://127.0.0.1:5173/mini-bananas.jpg",
+    imageSrc: "http://127.0.0.1:5173/mini-bananas.jpg",
+    imageAlt: "Image of mini bananas.",
     currency: "EUR",
   },
 ];

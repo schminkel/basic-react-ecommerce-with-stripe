@@ -107,7 +107,10 @@ export function Cart2(props) {
                         {product.size ? <p className="mt-1 text-sm text-gray-500">{product.size}</p> : null}
                       </div>
 
-                      <p className="text-right text-sm font-medium text-gray-900">{product.formattedValue}</p>
+                      <div>
+                        <p className="text-right text-sm font-medium text-gray-900">{product.formattedValue}</p>
+                        <p className="text-right text-xs font-extralight text-gray-500">({product.formattedPrice}&nbsp;/&nbsp;each)</p>
+                      </div>
                     </div>
 
                     <div className="mt-4 flex items-center xl:absolute xl:top-0 xl:left-1/2 xl:mt-0 xl:block">
@@ -119,7 +122,7 @@ export function Cart2(props) {
                           value={options.value}
                           options={options}
                           defaultValue={options[(options.findIndex(x => x.value == product.quantity))]}
-                          className="border-gray-300 py-1.5 text-left text-base font-medium leading-5 text-gray-700 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 xl:text-sm"
+                          className="border-gray-300 py-1.5 text-left text-base font-medium leading-5 text-gray-700 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 xl:text-sm"
                           onChange={e => handleQuantityChange(e, product.id)}/>
 
 

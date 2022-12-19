@@ -45,6 +45,27 @@ const productData = [
     imageAlt: "Image of mini bananas.",
     currency: "EUR",
   },
+  {
+    name: "Pear",
+    //price_id: "", // LIVE mode, see stripe dashboard
+    price_id: "price_1MGkBEHxQ9v68qpGE5goNSXg", // TEST mode, see stripe dashboard
+    description: "Pears are fruits produced and consumed around the world, growing on a tree and harvested in the Northern Hemisphere in late summer into October.",
+    price: 399,
+    imageSrc: "http://127.0.0.1:5173/pear.jpg",
+    imageAlt: "Image of pears.",
+    currency: "EUR",
+  },
+  {
+    name: "Kiwi",
+    //price_id: "", // LIVE mode, see stripe dashboard
+    price_id: "price_1MGkGNHxQ9v68qpGqPOTg0lI", // TEST mode, see stripe dashboard
+    description: "A kiwi fruit is a fruit with a brown hairy skin and green flesh.",
+    price: 349,
+    imageSrc: "http://127.0.0.1:5173/kiwi.jpg",
+    imageAlt: "Image of kiwis.",
+    currency: "EUR",
+  },
+  
 ];
 
 function App() {

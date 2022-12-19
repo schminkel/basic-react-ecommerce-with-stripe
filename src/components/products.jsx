@@ -54,7 +54,7 @@ export function Products(props) {
                       className="grow rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
                       onClick={() => addItem(product)}
                     >
-                      Add to bag
+                      Add to cart
                     </button>
                   </div>
                 </div>

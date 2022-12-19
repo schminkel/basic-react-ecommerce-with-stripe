@@ -125,7 +125,7 @@ export function Cart2(props) {
 
                       <button
                         type="button"
-                        className="ml-4 text-sm font-medium text-indigo-600 hover:text-indigo-500 xl:ml-0 xl:mt-3"
+                        className="ml-4 text-sm font-medium text-indigo-600 hover:text-indigo-500 xl:ml-1.5 xl:mt-3"
                         onClick={() => removeItem(product.id)}>
                         <span>Remove</span>
                       </button>

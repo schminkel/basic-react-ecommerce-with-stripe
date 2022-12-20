@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Bananas",
+    "price_id": "price_1MEC6HHxQ9v68qpGWX3u48GP",
+    "description": "The banana is rich in fibre, potassium and some beneficial vitamins for health. It is a good fruit for everybody except for diabetic, due to its high starch and sugar contents.",
+    "price": 399,
+    "imageSrc": "http://127.0.0.1:5173/bananas.jpg",
+    "imageAlt": "Image of bananas.",
+    "currency": "EUR"
+  },
+  {
+    "name": "Apples",
+    "price_id": "price_1MECASHxQ9v68qpGhO3uWriR",
+    "description": "The apple is a fruit that is rich in fibre, vitamins and minerals. It is a good fruit for everybody except for diabetic and obese people, due to its high starch and sugar contents.",
+    "price": 499,
+    "imageSrc": "http://127.0.0.1:5173/apples.jpg",
+    "imageAlt": "Image of apples.",
+    "currency": "EUR"
+  },
+  {
+    "name": "Oranges",
+    "price_id": "price_1MECBeHxQ9v68qpGXTI1ZOd5",
+    "description": "The term orange may refer to a number of citrus trees that produces fruit for people to eat. Oranges are a very good source of Vitamin C. Orange juice is an important part of many people's breakfast.",
+    "price": 599,
+    "imageSrc": "http://127.0.0.1:5173/oranges.jpg",
+    "imageAlt": "Image of oranges.",
+    "currency": "EUR"
+  },
+  {
+    "name": "Mini Bananas",
+    "price_id": "price_1MGTuWHxQ9v68qpGF6QHH2A3",
+    "description": "The banana is rich in fibre, potassium and some beneficial vitamins for health. It is a good fruit for everybody except for diabetic and obese people, due to its high starch and sugar contents.",
+    "price": 299,
+    "imageSrc": "http://127.0.0.1:5173/mini-bananas.jpg",
+    "imageAlt": "Image of mini bananas.",
+    "currency": "EUR"
+  },
+  {
+    "name": "Pear",
+    "price_id": "price_1MGkBEHxQ9v68qpGE5goNSXg",
+    "description": "Pears are fruits produced and consumed around the world, growing on a tree and harvested in the Northern Hemisphere in late summer into October.",
+    "price": 399,
+    "imageSrc": "http://127.0.0.1:5173/pear.jpg",
+    "imageAlt": "Image of pears.",
+    "currency": "EUR"
+  },
+  {
+    "name": "Kiwi",
+    "price_id": "price_1MGkGNHxQ9v68qpGqPOTg0lI",
+    "description": "A kiwi fruit is a fruit with a brown hairy skin and green flesh.",
+    "price": 349,
+    "imageSrc": "http://127.0.0.1:5173/kiwi.jpg",
+    "imageAlt": "Image of kiwis.",
+    "currency": "EUR"
+  }
+]

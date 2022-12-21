@@ -3,6 +3,7 @@ import { Navbar } from "./components/navbar";
 import { Cart } from "./components/cart";
 import { Footer } from "./components/footer";
 import { Promo } from "./components/promo";
+
 import { ToastContainer } from "react-toastify";
 import productData from "./data/productDataTest.json";
 

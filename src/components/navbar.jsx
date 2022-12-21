@@ -26,7 +26,7 @@ export function Navbar(props) {
 
   return (
     <>
-      <Disclosure as="nav" className="bg-white shadow">
+      <Disclosure as="nav" className="sticky top-0 z-40 bg-white bg-opacity-90 shadow">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

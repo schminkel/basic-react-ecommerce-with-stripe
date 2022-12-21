@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Renders the toast container */}
+      {/* Renders the toast message container */}
       <ToastContainer/>
 
       {/* Renders the navbar */}

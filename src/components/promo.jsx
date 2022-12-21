@@ -27,7 +27,7 @@ export function Promo() {
       <div aria-hidden="true" className="absolute inset-0">
         <div className="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
           <img
-            src="http://127.0.0.1:5173/promo.jpg"
+            src="./promo.jpg"
             alt=""
             className="h-full w-full object-cover object-center rounded-lg"
           />

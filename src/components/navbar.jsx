@@ -47,12 +47,12 @@ export function Navbar(props) {
                   
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="http://127.0.0.1:5173/shop.svg"
+                    src="./shop.svg"
                     alt="Your Company"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="http://127.0.0.1:5173/shop.svg"
+                    src="./shop.svg"
                     alt="Your Company"
                   />
                   

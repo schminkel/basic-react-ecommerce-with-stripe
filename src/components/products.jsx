@@ -41,7 +41,7 @@ export function Products(props) {
             <h2 className="text-4xl font-bold text-gray-600 mt-2 mb-6">
               Our fruits collection
             </h2>
-            <div className="mt-2 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+            <div className="mt-2 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
               {props.product.map((product) => (
                 <div key={product.name}>
                   <div className="relative">

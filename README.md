@@ -9,6 +9,7 @@
 - [ ] Add deployment to GitHub Pages
 - [ ] Footer to Github
 - [ ] Show Disclamer at start that this is a demo shop only
+- [ ] Write a list of all Third Party Libraries used in this project
 
 ## Third Party Libraries
 

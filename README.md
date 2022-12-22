@@ -14,3 +14,11 @@
 ## Third Party Libraries
 
 - ...
+
+## Github
+
+- Website on Github Page:
+  - https://github.com/schminkel/react-shopping-cart-client-only.git
+
+- Private Repo:
+  - https://github.com/schminkel/my-use-shopping-cart-client-only.git

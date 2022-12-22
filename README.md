@@ -20,6 +20,8 @@
 - Website on Github Page:
   - https://github.com/schminkel/react-shopping-cart-client-only.git
   - schminkel/react-shopping-cart-client-only
+  - git remote add origin https://github.com/schminkel/react-shopping-cart-client-only.git
+  
 
 - Private Github Repo:
   - https://github.com/schminkel/my-use-shopping-cart-client-only.git

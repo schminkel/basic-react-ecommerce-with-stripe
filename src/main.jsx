@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <CartProvider
       mode="payment"
       cartMode="client-only"
-      stripe={import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY}
+      stripe={"pk_test_51KVz3lHxQ9v68qpG3VOVHvXoZ5gAMuGxDrJ8ICfuc9IkKrL0OE2p5iFYAL9MWfqKSXJ8IdCYcVLBTflfIQNDHXVT005mUdCINIe"}
       successUrl="https://schminkel.github.io/react-shopping-cart-client-only"
       cancelUrl="https://schminkel.github.io/react-shopping-cart-client-only"
       currency="EUR"

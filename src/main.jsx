@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       mode="payment"
       cartMode="client-only"
       stripe={import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY}
-      successUrl="http://127.0.0.1:5173/"
-      cancelUrl="http://127.0.0.1:5173/"
+      successUrl="https://schminkel.github.io/react-shopping-cart-client-only"
+      cancelUrl="https://schminkel.github.io/react-shopping-cart-client-only"
       currency="EUR"
       allowedCountries={['US', 'GB', 'DE']}
       billingAddressCollection={true}

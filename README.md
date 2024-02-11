@@ -2,13 +2,12 @@
 
 ## Next Tasks
 
-- [X] Change the navbar to sticky and make it transparent
-- [ ] Add 2 random fruits to have 8 in total
+- [X] Add 2 random fruits to have 8 in total
 - [X] Change responsive behavior of the products list to allow 3 columns as well
 - [X] Fix the links that include http and IP address
-- [ ] Add deployment to GitHub Pages
-- [ ] Footer to Github
-- [ ] Show Disclamer at start that this is a demo shop only
+- [X] Add deployment to GitHub Pages
+- [X] Footer with link to Github
+- [X] Show Disclamer at start that this is a demo shop only
 - [ ] Write a list of all Third Party Libraries used in this project
 
 ## Third Party Libraries
@@ -20,3 +19,8 @@
 - Website on Github Page:
   - https://github.com/schminkel/react-shopping-cart-client-only.git
   - schminkel/react-shopping-cart-client-only
+
+## Vercel
+
+- Deployed on Vercel
+  - ...

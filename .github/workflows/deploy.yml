@@ -19,7 +19,7 @@ jobs:
       - name: Build project
         run: npm run build
         env:
-          BASE_PATH: ${{secrets.BASE_PATH}}
+          VITE_BASE_PATH: ${{secrets.VITE_BASE_PATH}}
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:

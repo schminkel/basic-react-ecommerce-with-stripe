@@ -8,7 +8,8 @@
 - [X] Add deployment to GitHub Pages
 - [X] Footer with link to Github
 - [X] Show Disclamer at start that this is a demo shop only
-- [ ] Write a list of all Third Party Libraries used in this project
+- [X] Write a list of all Third Party Libraries used in this project
+- [ ] Deployment on Vercel
 
 ## Third Party Libraries
 
@@ -17,11 +18,15 @@
 - Tailwindcss v3.4
 - use-shopping-cart v3.2
 
+## Add Environment secrets in Github/Vercel
+
+- see: .example.env file
+
 ## Github
 
 - Website on Github Page:
-  - https://github.com/schminkel/react-shopping-cart-client-only.git
-  - schminkel/react-shopping-cart-client-only
+  - https://github.com/schminkel/basic-react-ecommerce-with-stripe.git
+  
 
 ## Vercel
 

@@ -12,9 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CartProvider
           mode="payment"
           cartMode="client-only"
-          stripe={process.env.VITE_STRIPE_PUBLIC_KEY}
-          successUrl={process.env.VITE_STRIPE_SUCCESS_URL}
-          cancelUrl={process.env.VITE_STRIPE_CANCEL_URL}
+          stripe={process.env.VITE_STRIPE_PUBLIC_KEY.toString()}
+          successUrl={process.env.VITE_STRIPE_SUCCESS_URL.toString()}
+          cancelUrl={process.env.VITE_STRIPE_CANCEL_URL.toString()}
           currency="EUR"
           allowedCountries={['US', 'GB', 'DE']}
           billingAddressCollection={true}

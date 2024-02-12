@@ -10,6 +10,7 @@
 - [X] Show Disclamer at start that this is a demo shop only
 - [X] Write a list of all Third Party Libraries used in this project
 - [ ] Deployment on Vercel
+- [ ] Update GithubActions from Node v16 to v20 
 
 ## Third Party Libraries
 

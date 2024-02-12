@@ -12,7 +12,10 @@
 
 ## Third Party Libraries
 
-- ...
+- Vite v4
+- React.js v18
+- Tailwindcss v3.4
+- use-shopping-cart v3.2
 
 ## Github
 

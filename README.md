@@ -9,7 +9,8 @@
 - [X] Footer with link to Github
 - [X] Show Disclamer at start that this is a demo shop only
 - [X] Write a list of all Third Party Libraries used in this project
-- [ ] Deployment on Vercel
+- [X] Deployment on Vercel
+- [ ] Add *.xtra.tools Domain to Vercel
 - [ ] Update GithubActions from Node v16 to v20 
 
 ## Third Party Libraries
@@ -25,11 +26,13 @@
 
 ## Github
 
-- Website on Github Page:
+- Github Repo (Source-Code):
   - https://github.com/schminkel/basic-react-ecommerce-with-stripe.git
-  
+
+- Github Pages (Hosting):
+  - https://schminkel.github.io/basic-react-ecommerce-with-stripe
 
 ## Vercel
 
 - Deployed on Vercel
-  - ....
+  - https://basic-react-ecommerce-with-stripe.vercel.app

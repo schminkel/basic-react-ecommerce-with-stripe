@@ -10,7 +10,7 @@ export default ({ mode }) => {
 
   return defineConfig({
     // Use the VITE_BASE_PATH environment variable, fallback to '/' if not defined
-    base: JSON.stringify(process.env.VITE_BASE_PATH) || '/',
+    base: process.env.VITE_BASE_PATH,
 
     // Include plugins needed by the application, for example, react
     plugins: [react()],

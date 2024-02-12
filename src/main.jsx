@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-console.log("#### (main.jsx) import.meta.env: ", import.meta.env);
-
 /**
  * Renders the app
  */
@@ -14,9 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CartProvider
           mode="payment"
           cartMode="client-only"
-          stripe={import.meta.env.VITE_STRIPE_PUBLIC_KEY}
-          successUrl={import.meta.env.VITE_STRIPE_SUCCESS_URL}
-          cancelUrl={import.meta.env.VITE_STRIPE_CANCEL_URL}
+          stripe={__VITE_STRIPE_PUBLIC_KEY__}
+          successUrl={__VITE_STRIPE_SUCCESS_URL__}
+          cancelUrl={__VITE_STRIPE_CANCEL_URL__}
           currency="EUR"
           allowedCountries={['US', 'GB', 'DE']}
           billingAddressCollection={true}

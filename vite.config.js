@@ -1,42 +1,27 @@
-import {defineConfig, loadEnv} from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
 
+// This function is exported for Vite to use as configuration
 export default ({ mode }) => {
-  // Load app-level env vars to node-level env vars.
-  process.env = {...process.env, ...loadEnv(mode, process.cwd())};
-  console.log("### (vite.config.js) process.env: ", process.env)
+  // Load app-level env vars specific to the current mode
+  const env = loadEnv(mode, process.cwd());
+
+  console.log("### (vite.config.js) mode: ", mode);
+  console.log("### (vite.config.js) Loaded env vars: ", env);
 
   return defineConfig({
-    // To access env vars here use process.env.TEST_VAR
-    base: process.env.VITE_BASE_PATH,
+    // Use the VITE_BASE_PATH environment variable, fallback to '/' if not defined
+    base: env.VITE_BASE_PATH || '/',
+
+    // Include plugins needed by the application, for example, react
     plugins: [react()],
+
+    // Define global constants which can be replaced at build time, see main.jsx
+    define: {
+      __VITE_BASE_PATH__: JSON.stringify(env.VITE_BASE_PATH),
+      __VITE_STRIPE_PUBLIC_KEY__: JSON.stringify(env.VITE_STRIPE_PUBLIC_KEY),
+      __VITE_STRIPE_SUCCESS_URL__: JSON.stringify(env.VITE_STRIPE_SUCCESS_URL),
+      __VITE_STRIPE_CANCEL_URL__: JSON.stringify(env.VITE_STRIPE_CANCEL_URL),
+    },
   });
-}
-
-// export default defineConfig({
-//   base: env.VITE_BASE_PATH,
-//   plugins: [react()],
-//   process.env:
-//   __VITE_BASE_PATH__: JSON.stringify(env.VITE_BASE_PATH),
-// })
-
-// https://vitejs.dev/config/
-// export default defineConfig(({ command, mode }) => {
-//
-//   // Load env file based on `mode` in the current working directory.
-//   // Set the third parameter to '' to load all env regardless of the `VITE_` prefix.
-//   const env = loadEnv(mode, process.cwd(), '')
-//
-//   console.log("### (vite.config.js) mode: ", mode);
-//   console.log("### (vite.config.js) env: ", env);
-//   console.log("### (vite.config.js) VITE_BASE_PATH: ", env.VITE_BASE_PATH);
-//
-//   return {
-//     // vite config
-//     define: {
-//       base: JSON.stringify(env.APP_ENV),
-//       plugins: [react()],
-//     },
-//
-//   }
-// })
+};

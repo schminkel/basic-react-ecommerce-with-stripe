@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-console.log("#### (main.jsx) all env: ", import.meta.env);
+console.log("#### (main.jsx) import.meta.env: ", import.meta.env);
 
 /**
  * Renders the app

@@ -4,6 +4,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
+console.log("VITE_BASE_PATH: ", import.meta.env.VITE_BASE_PATH);
+console.log("VITE_STRIPE_PUBLIC_KEY: ", import.meta.env.VITE_STRIPE_PUBLIC_KEY);
+console.log("VITE_STRIPE_SUCCESS_URL: ", import.meta.env.VITE_STRIPE_SUCCESS_URL);
+console.log("VITE_STRIPE_CANCEL_URL: ", import.meta.env.VITE_STRIPE_CANCEL_URL);
+
 /**
  * Renders the app
  */
@@ -12,9 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CartProvider
           mode="payment"
           cartMode="client-only"
-          stripe={process.env.VITE_STRIPE_PUBLIC_KEY.toString()}
-          successUrl={process.env.VITE_STRIPE_SUCCESS_URL.toString()}
-          cancelUrl={process.env.VITE_STRIPE_CANCEL_URL.toString()}
+          stripe={import.meta.env.VITE_STRIPE_PUBLIC_KEY}
+          successUrl={import.meta.env.VITE_STRIPE_SUCCESS_URL}
+          cancelUrl={import.meta.env.VITE_STRIPE_CANCEL_URL}
           currency="EUR"
           allowedCountries={['US', 'GB', 'DE']}
           billingAddressCollection={true}
